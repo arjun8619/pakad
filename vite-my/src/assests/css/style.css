@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-sec{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header-sec .navbar {
+    background: #F37607;
+}
+
+.header-sec .tp-btn a{
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.header-sec .tp-btn a img{
+    width: 130px;
+}
+
+.header-sec .navbar-brand img {
+    width: 130px;
+}
+
+.header-sec .navbar-nav .nav-item {
+    padding: 0 20px;
+}
+
+.header-sec .navbar-nav .nav-item a {
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+
+.banner-sec {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative
+}
+
+.banner-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.596);
+    /* adjust opacity */
+    z-index: 1;
+}
+
+.pos {
+    position: relative;
+    z-index: 2;
+    /* ensure content comes above overlay */
+}
+
+.banner-sec h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.banner-sec p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.banner-hm-box a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.banner-hm-box a img{
+    width: 150px;
+}
+
+
+.shipping-sec {
+    padding: 50px 0;
+    background: #151E48;
+}
+
+.shipping-sec .shipping-box {
+    background-color: #F37607;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(243, 118, 7, 0.4);
+
+}
+
+
+.shipping-sec .shipping-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.shipping-sec .shipping-content h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.shipping-sec .shipping-content p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.shipping-box .fas-icon {
+    font-size: 20px;
+}
+
+
+.category-sec {
+    padding: 50px 0;
+}
+
+.category-sec h5 {
+    font-size: 30px;
+    font-weight: 600
+}
+
+.category-sec h5 span {
+    color: #F37607;
+}
+
+
+
+.fresh-grocery{
+    padding: 50px 0;
+    background: #eee;
+}
+
+.fresh-grocery .fresh-box h6{
+font-size: 15px;
+color: #000;
+font-weight: 600;
+
+}
+
+.fresh-grocery .fresh-box h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.fresh-grocery .fresh-box h2 span{
+     color: #F37607;
+}
+
+.fresh-grocery .fresh-box a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.fresh-grocery .fresh-box a img{
+    width: 150px;
+}
+
+.fresh-grocery img{
+    width: 75%;
+}
+
+/* store-sec */
+
+.store-sec{
+    padding: 50px 0;
+}
+
+.store-sec .shipping-box {
+    border : 1px solid #F37607;
+    color: #000;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(243, 118, 7, 0.4);
+
+}
+
+
+
+.store-sec .shipping-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.store-sec .shipping-content h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.store-sec .shipping-content p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.store-sec-box{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.store-sec .store-sec-box h2 {
+    font-size: 30px;
+    font-weight: 600
+}
+
+.store-sec .store-sec-box h2 span {
+    color: #F37607;
+}
+
+.about-team{
+    padding: 50px 0;
+    background: #eee;
+}
+
+.about-team .about-team-box h2 {
+    font-size: 30px;
+    font-weight: 600
+}
+
+.about-team .about-team-box h2 span {
+    color: #F37607;
+}
+
+.about-team .about-team-box a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+} 
+
+.about-team .about-team-box a img{
+    width: 150px;
+}
+
+
+
+.app-intro-sec{
+    padding: 50px 0;
+}
+
+.app-intro-sec .app-content-box h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+    line-height: 40px;
+}
+
+.app-content-box{
+    padding-left: 30px;
+}
+
+.app-intro-sec .app-content-box p{
+     font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    line-height: 25px;
+}
+
+.app-intro-sec .app-content-box a img{
+    width: 150px;
+}
+
+.app-intro-sec .play-store-banner  img{
+    border-radius: 15px;
+}
+
+
+
+
+
+.faq-sec{
+    padding: 50px 0;
+}
+
+.faq-sec .faq-sec-pic img{
+    width: 75%;
+}
+
+.faq-sec .accordion-button {
+    background-color: #eee;
+    transition: all 0.3s ease;
+  }
+
+ .faq-sec  .accordion-button:not(.collapsed) {
+    background-color: #F37607;
+    color: #fff;
+  }
+
+ .faq-sec  .accordion-button:focus {
+    box-shadow: none;
+
+  }
+
+  .faq-sec .accordion-item {
+    border: none;
+    margin-bottom: 10px;
+  }
+
+  .faq-sec .accordion-body {
+    background: #fffef9;
+    padding: 1rem 1.25rem;
+    color: #444;
+  }
+
+  .testimonal-sec{
+    padding: 50px 0;
+    background: #eee;
+  }
+
+  .testimonal-sec h2{
+    font-size: 30px;
+    font-weight: 700
+  }
+
+  .testimonal-sec .testimonial-slider {
+      padding: 60px 20px;
+    }
+
+  .testimonal-sec  .testimonial-card {
+      background: #fff;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      text-align: center;
+      display : flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .testimonal-sec  .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+  .testimonal-sec  .testimonial-card h6 {
+      font-weight: bold;
+      margin-top: 10px;
+      color: #F37607;
+    }
+
+  .testimonal-sec  .testimonial-card p {
+      font-size: 15px;
+      color: #555;
+    }
+
+  .testimonal-sec  .owl-nav {
+      position: absolute;
+      top: 45%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+   .testimonal-sec .owl-nav button.owl-prev,
+   .testimonal-sec .owl-nav button.owl-next {
+      background-color: #F37607;
+      color: white;
+      border-radius: 50%;
+      padding:0px 10px !important;
+      border: none;
+    }
+
+   .testimonal-sec .owl-nav button:hover {
+      background-color: #d55c00;
+    }
+
+  .testimonal-sec  .owl-dots {
+      margin-top: 20px;
+    }
+
+   .testimonal-sec .owl-dot span {
+      background: #ddd;
+    }
+
+    .testimonal-sec .owl-dot.active span {
+      background: #F37607;
+    }
+
+.footer-sec {
+    padding: 50px 0;
+}
+
+
+.footer-sec {
+    background: #F37607;
+}
+
+
+.footer-sec .footer-btm-img img {
+    width: 125px;
+}
+
+.footer-sec .footer-btm-img p {
+    font-size: 14px;
+    color: #fff;
+    text-align: start;
+    padding: 5px 0;
+}
+
+.footer-sec .working-time{
+    display: flex;
+    gap: 5px;
+}
+
+.footer-sec  .working-time h4{
+    font-size: 14px;
+}
+.footer-sec  .working-time h4 span{
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-sec .social-media-follow a {
+    color: #000;
+    font-size: 20px;
+}
+
+.footer-contact ul li{
+      color: #fff;
+}
+
+.footer-contact h2{
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #000;
+}
+.bottom-link h2{
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+} 
+
+.footer-contact ul{
+        padding-left: 0rem;
+}
+
+.footer-contact ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.bottom-link h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bottom-link ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+.bottom-link ul li a{
+    display: inline-block;
+    font-size: 16px;
+      color: #fff;
+    font-family: 700;
+    text-decoration: none;
+
+}
+
+.bottom-link ul{
+        padding-left: 0rem;
+}
+
+.footer-sec .social-media-follow .fa-facebook{
+    color: #151E48;
+    font-size: 20px;
+}
+
+.faq-sec h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+@media screen and (max-width : 767px) {
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.header-sec .navbar-nav .nav-item{
+    padding: 0;
+}
+
+.navbar-toggler{
+    background: #fff;
+}
+    .header-sec .navbar-brand img{
+        width: 100px;
+    }
+    .banner-sec{
+        height: 320px !important;
+    }
+
+    .banner-hm-box{
+        padding-top: 80px;
+    }
+
+    .banner-sec h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .banner-sec p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .banner-sec-shop{
+        display: flex;
+        justify-content: center;
+    }
+    .fresh-grocery .fresh-box h6{
+        text-align: center;
+    }
+
+    .fresh-grocery p{
+        text-align: center;
+    }
+
+    .fresh-btn{
+        display: flex;
+        justify-content: center
+    }
+
+    .fresh-grocery .fresh-box h2{
+         font-size: 25px;
+        text-align: center;
+    }
+
+    .shipping-content{
+        margin: 10px 0;
+    }
+
+    .fresh-grocery img{
+        width: 100%;
+    }
+    .store-sec-box {
+        padding-left: 10px;
+    }
+
+    .store-sec .store-sec-box h2{
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    .about-team .about-team-box h2{
+         font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about-team .about-team-box p{
+        text-align: center;
+    }
+
+    .about-sec-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-content-box{
+        padding: 0px;
+    }
+
+    .app-intro-sec .app-content-box h2{
+        font-size: 30px;
+        line-height: 30px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .app-intro-sec .app-content-box p{
+        text-align: center;
+    }
+
+    .faq-sec-pic{
+        display: flex;
+        justify-content: center;
+    }
+
+    .faq-sec .faq-sec-pic img{
+    width: 70%;
+}
+}
+@media screen and (max-width : 567px) {
+      .play-store-btn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
